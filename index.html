@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BD Tour</title>
+    <link rel="stylesheet" href="https://icons8.com/icon/CNeeR6XFF39q/airplane-take-off">
     <style>
         .banner{
            margin: 50px;
@@ -49,7 +50,7 @@
        #heading{
         text-align: center;
         font-size: 30px;
-        background-color: rgb(187, 130, 130);
+        /* background-color: rgb(187, 130, 130); */
         
         color: rgb(73, 51, 22);
        }
@@ -59,6 +60,10 @@
        }
        .pic{
         margin-left: 50px;
+        border: ;
+        border-radius: 20px;
+        border-color: rgb(85, 73, 59);
+        
        }
        
        
@@ -66,6 +71,8 @@
          background-color: aqua;
          border-radius: 20px;
          padding: 5px 16px;
+         cursor: pointer;
+         
        }
        .ratargul{
         margin: 50px;
@@ -74,6 +81,7 @@
          background-color: aqua;
          border-radius: 20px;
          padding: 5px 16px;
+         cursor: pointer;
        }
        .tangor-haor{
         margin: 50px;
@@ -82,6 +90,7 @@
         background-color: aqua;
          border-radius: 20px;
          padding: 5px 16px;
+         cursor: pointer;
        }
        .photo{
         background-image: url("image/images/hero-bg.png");
@@ -95,11 +104,48 @@
            align-items: center;
        }
         .sylhet-text{
-            align-items: center;
+           align-items: center;
+             text-align: center;
+        font-size: 30px;
         }
+        header{
+            display:flex ;
+            justify-content: space-around;
+            background-color: cadetblue;
+            
+        }
+        .nav{
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            cursor: pointer;
+            margin-top: 35px;
+        }
+        .plan{
+            padding: 5px 16px;
+            border-radius: 20px;
+            height: 5%;
+            margin-top: 35px;
+            background-color: orangered;
+        }
+       
+        
     </style>
 </head>
 <body>
+    <header>
+        <h1>BD TOURS & TRAVELS</h1>
+
+        <ul class="nav">
+            <li>HOME</li>
+            <li>TOURS</li>
+            <li>ABOUT US</li>
+            <li>GUIDE</li>
+            <li>CONTACT</li>
+        </ul>
+        <button class="plan">PLAN FOR TOUR</button>
+        
+    </header>
     <div class="banner">
          
         <div class="banner-text">
@@ -121,31 +167,36 @@
     </div>
     <div id="service-conteiner">
         <div id="heading">
-             <h2>See Sylhet Nature</h2>
-
+             
+              <h2>Lets See Sylhet Nature</h2>
         </div>
        <div class="photo">
         
-            
+           
         
 
         <div class="pic">
             <img src="https://images.unsplash.com/photo-1710398393305-17636b00db29?q=80&w=1109&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 50% ;"> 
             <h2>Jaflong</h2>
            <p>Lorem ipsum dolor sit amet.</p>
-           <button class="card1">READ ME</button>
+           <button class="card1">
+            <a href="https://en.wikipedia.org/wiki/Jaflong">READ ME</a>
+            </button>
            </div>
        <div class="ratargul">
         <img src="https://images.unsplash.com/photo-1709804811736-21feeeefd5aa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 50%;">
          <h2>Ratargul</h2>
          <p>Lorem ipsum dolor sit amet.</p>
-         <button class="card2">READ ME</button>
+         <button class="card2">
+            <a href="https://en.wikipedia.org/wiki/Ratargul_Swamp_Forest">READ ME</a>
+         </button>
        </div>
        <div class="tangor-haor">
             <img src="https://images.unsplash.com/photo-1745908109089-2483db61c074?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 50%;">
             <h2>Tnaguar Haor</h2>
             <p>Lorem ipsum dolor sit amet.</p>
-            <button class="card3">READ MORE</button>
+            <button class="card3"><a href="https://en.wikipedia.org/wiki/Tanguar_Haor">READ ME</a>
+            </button>
        </div>
 
        </div>
